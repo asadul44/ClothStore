@@ -1,20 +1,21 @@
-import {
-  CategoryList,
-  CollectionSection,
-  DiscoverSection,
-  HeroCarousel,
-  HomeHeader,
-  RecommendedSection,
-  ScreenContainer,
-  SearchBar,
-} from "@/components/clothing";
 import { StyleSheet, View } from "react-native";
-import { AppNavigation } from "../navigation";
+
+import { AppNavigation } from "@/app/_layout";
+import {
+    CategoryList,
+    CollectionSection,
+    DiscoverSection,
+    HeroCarousel,
+    HomeHeader,
+    RecommendedSection,
+    ScreenContainer,
+    SearchBar,
+} from "@/components/clothing";
 
 export default function HomeScreen() {
   return (
     <View style={styles.root}>
-      <ScreenContainer>
+      <ScreenContainer bottomInset={120}>
         <HomeHeader />
         <SearchBar />
         <HeroCarousel />

@@ -1,0 +1,66 @@
+export type ThemeMode = 'light' | 'dark';
+
+export const ClothingColors = {
+  light: {
+    background: '#F6F6F6',
+    surface: '#FFFFFF',
+    text: '#111111',
+    textSecondary: '#8E8E93',
+    textMuted: '#AEAEB2',
+    border: '#E5E5EA',
+    primary: '#1C1C1E',
+    primaryText: '#FFFFFF',
+    accent: '#007AFF',
+    star: '#F5A623',
+    cardShadow: 'rgba(0,0,0,0.06)',
+    navBackground: '#1C1C1E',
+    navIconActive: '#FFFFFF',
+    navIconInactive: '#8E8E93',
+    navInactive: '#8E8E93',
+    inputBackground: '#FFFFFF',
+    pillBackground: '#F2F2F7',
+    badge: '#FF3B30',
+    visa: '#1A1F71',
+    summaryDivider: '#E5E5EA',
+  },
+  dark: {
+    background: '#0D0D0D',
+    surface: '#1C1C1E',
+    text: '#FFFFFF',
+    textSecondary: '#AEAEB2',
+    textMuted: '#636366',
+    border: '#2C2C2E',
+    primary: '#FFFFFF',
+    primaryText: '#111111',
+    accent: '#0A84FF',
+    star: '#FFD60A',
+    cardShadow: 'rgba(0,0,0,0.4)',
+    navBackground: '#FFFFFF',
+    navIconActive: '#111111',
+    navIconInactive: '#636366',
+    navInactive: '#636366',
+    inputBackground: '#1C1C1E',
+    pillBackground: '#2C2C2E',
+    badge: '#FF453A',
+    visa: '#5E6AD2',
+    summaryDivider: '#2C2C2E',
+  },
+} as const;
+
+export const Spacing = {
+  xs: 4,
+  sm: 8,
+  md: 12,
+  lg: 16,
+  xl: 20,
+  xxl: 24,
+  xxxl: 32,
+} as const;
+
+export const Radius = {
+  sm: 12,
+  md: 16,
+  lg: 20,
+  xl: 24,
+  pill: 999,
+} as const;
